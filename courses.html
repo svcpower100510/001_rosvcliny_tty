@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>课程 | 听风沐芳华学菀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="css/pages/courses.css" />
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text"><span class="brand-cn">听风沐芳华学菀</span><span class="brand-en">TingFengMu</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="courses.html" class="nav-link active">课程体系</a>
+        <a href="about.html" class="nav-link">关于我们</a>
+        <a href="contact.html" class="nav-link">联系我们</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-switch" id="langSwitch"><span class="lang-current">中</span><span class="lang-divider">/</span><span class="lang-alt">EN</span></button>
+        <a href="#" class="btn btn-primary btn-sm nav-cta">登录</a>
+        <button class="nav-toggle" id="navToggle" aria-label="菜单"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-kicker">COURSES</span>
+      <h1 class="page-title">从高中到考研，<span class="gradient">全阶段覆盖</span></h1>
+      <p class="page-sub">每门课程需凭密钥解锁，已解锁的课程可直接进入学习</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="license-bar card-glow" id="licenseBar"><!-- JS 渲染授权状态 --></div>
+
+      <h2 class="group-title" data-reveal>高中英语 <span class="group-sub">共 40 门课程</span></h2>
+      <div class="course-grid course-grid-full" id="gridSenior"><!-- JS 渲染 --></div>
+
+      <h2 class="group-title group-title--postgrad" data-reveal>考研英语 <span class="group-sub">共 50 门课程</span></h2>
+      <div class="course-grid course-grid-full" id="gridPostgrad"><!-- JS 渲染 --></div>
+    </div>
+  </section>
+
+  <!-- 密钥解锁弹窗 -->
+  <div class="modal" id="unlockModal" aria-hidden="true">
+    <div class="modal-mask"></div>
+    <div class="modal-panel card-glow" role="dialog" aria-labelledby="unlockTitle">
+      <button class="modal-close" id="unlockClose" aria-label="关闭">×</button>
+      <span class="modal-kicker" id="unlockKicker">UNLOCK</span>
+      <h3 id="unlockTitle">解锁课程</h3>
+      <p class="modal-desc" id="unlockDesc">请输入本课程所属阶段的授权密钥</p>
+      <div class="key-input-wrap">
+        <input class="key-input" id="keyInput" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19" />
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-sm" id="keySubmit">验证并解锁</button>
+      </div>
+      <p class="modal-tip" id="unlockTip">提示：密钥区分大小写，格式为 4 组 4 位字符，用「-」连接。</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand brand-light"><span class="brand-mark">✦</span><span class="brand-text"><span class="brand-cn">听风沐芳华学菀</span><span class="brand-en">TingFengMu</span></span></div>
+        <p>英语课程与电子书售卖平台，覆盖高中到考研各阶段。</p>
+        <p class="footer-author">作者：rosvcliny_仰望终章者</p>
+        <div class="footer-contact-links">
+          <a href="https://wpa.qq.com/msgrd?v=3&amp;uin=916940838&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener">💬 QQ：916940838</a>
+          <a href="https://b23.tv/keSEf3w" target="_blank" rel="noopener">📺 B 站主页</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> 听风沐芳华学菀 · 作者 rosvcliny_仰望终章者 · 版权所有，保留一切权利。</span><span class="footer-biz">本网站为商业用途，提供英语课程与电子书售卖服务。</span></div></div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/starfield.js"></script>
+  <script src="js/license.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

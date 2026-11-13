@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于 | 听风沐芳华学菀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
+</head>
+<body>
+  <canvas id="starfield" class="starfield" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text"><span class="brand-cn">听风沐芳华学菀</span><span class="brand-en">TingFengMu</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="courses.html" class="nav-link">课程体系</a>
+        <a href="about.html" class="nav-link active">关于我们</a>
+        <a href="contact.html" class="nav-link">联系我们</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="lang-switch" id="langSwitch"><span class="lang-current">中</span><span class="lang-divider">/</span><span class="lang-alt">EN</span></button>
+        <a href="#" class="btn btn-primary btn-sm nav-cta">登录</a>
+        <button class="nav-toggle" id="navToggle" aria-label="菜单"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-kicker">ABOUT US</span>
+      <h1 class="page-title">英语课程与电子书<span class="gradient">售卖平台</span></h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>关于本站</h2>
+        <p>「听风沐芳华学菀」是一个<strong>商业用途的英语课程与电子书售卖平台</strong>，内容涵盖高中、大学英语四六级到考研英语各阶段，由 <strong>rosvcliny_仰望终章者</strong> 独立创建与运营。</p>
+        <p>平台提供 <strong>40 门高中英语课程</strong>与 <strong>50 门考研英语课程</strong>，所有课程均通过授权密钥进行访问控制，用户购买后可凭密钥永久解锁对应阶段全部课程，一次付费、终身使用。</p>
+        <p>除课程外，平台还提供配套电子书、真题资料与学习答疑服务，支持单独购买或与课程打包。所有内容版权归作者所有，未经授权不得传播、转载或用于商业用途。</p>
+      </div>
+      <div class="about-visual card-glow"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-kicker">HOW TO BUY</span>
+        <h2 class="section-title">如何购买与解锁</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <h3>1. 联系作者</h3>
+          <p>通过下方 QQ 或 B 站联系 rosvcliny_仰望终章者，说明需要购买的课程阶段。</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>2. 完成付款</h3>
+          <p>确认课程与价格后完成付款，作者将通过 QQ 发送对应阶段的授权密钥。</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🔑</div>
+          <h3>3. 输入密钥</h3>
+          <p>在课程页面点击「输入密钥解锁」，输入密钥即可永久解锁该阶段全部课程。</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">📖</div>
+          <h3>4. 开始学习</h3>
+          <p>解锁后课程与配套电子书全部开放，可反复观看、随时回看。</p>
+        </article>
+      </div>
+
+      <div class="contact-band card-glow" data-reveal>
+        <span class="modal-kicker">CONTACT AUTHOR</span>
+        <h3>联系作者购买</h3>
+        <p class="contact-band-desc">点击下方任意方式即可直接跳转，添加时请备注「购买英语课程」</p>
+        <div class="contact-band-actions">
+          <a href="https://wpa.qq.com/msgrd?v=3&amp;uin=916940838&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+            <span class="contact-icon">💬</span>添加作者 QQ：916940838
+          </a>
+          <a href="https://b23.tv/keSEf3w" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+            <span class="contact-icon">📺</span>访问作者 B 站主页
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand brand-light"><span class="brand-mark">✦</span><span class="brand-text"><span class="brand-cn">听风沐芳华学菀</span><span class="brand-en">TingFengMu</span></span></div>
+        <p>英语课程与电子书售卖平台，覆盖高中到考研各阶段。</p>
+        <p class="footer-author">作者：rosvcliny_仰望终章者</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><span>© <span id="year"></span> 听风沐芳华学菀 · 作者 rosvcliny_仰望终章者 · 版权所有，保留一切权利。</span><span class="footer-biz">本网站为商业用途，提供英语课程与电子书售卖服务。</span></div></div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/starfield.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
